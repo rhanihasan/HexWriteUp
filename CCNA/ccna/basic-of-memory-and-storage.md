@@ -1,6 +1,6 @@
 ---
 description: The Units is a collection of Basic memory and storage devices.
-cover: ../.gitbook/assets/CCNA-Basicofmemory.jpeg
+cover: ../.gitbook/assets/CCNA-Basicofmemory (1).jpeg
 coverY: 0
 layout:
   cover:
