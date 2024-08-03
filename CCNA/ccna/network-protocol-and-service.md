@@ -190,7 +190,7 @@ In summary, **TCP** ensures reliable and ordered data delivery, **UDP** prioriti
 >
 > Port 21 is used for CONTROL CONNECTION.
 
-<figure><img src="../.gitbook/assets/FTP connection Topology" alt=""><figcaption><p>FTP Connection</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/FTP_REQ.png" alt=""><figcaption><p>FTP Connection</p></figcaption></figure>
 
 ### <mark style="color:purple;">Internet Control Message Protocol (ICMP)</mark>
 
@@ -203,8 +203,6 @@ In summary, **TCP** ensures reliable and ordered data delivery, **UDP** prioriti
 > Each device on the **network** performs **ARP** (Address Resolution Protocol) and maintains an **ARP cache**, which keeps track of matching **IP and MAC addresses.** ARP does not have a specific port number
 
 <figure><img src="../.gitbook/assets/ARP_REQUEST.png" alt=""><figcaption><p>ARP Request</p></figcaption></figure>
-
-<img src="../.gitbook/assets/file.excalidraw (1).svg" alt="ARP Request" class="gitbook-drawing">
 
 {% code title="Verification ARP" %}
 ```bash
