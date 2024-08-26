@@ -109,8 +109,6 @@ Due to increased electronic devices, IP address shortage led IANA to introduce P
 > * IP can't start or end with **0** but can have **0** in other places.
 > * IP ending with **0** represents the network.
 
-
-
 ## <mark style="color:purple;">Subnet</mark>
 
 > * Subnetting divides **big networks.**
@@ -124,6 +122,8 @@ Due to increased electronic devices, IP address shortage led IANA to introduce P
 > * **Subnetting** involves dividing subnets.
 > * Network bits are fixed and cannot be changed.
 > * <mark style="color:orange;">Host bits are changeable</mark>
+
+
 
 > #### Example:
 >
@@ -154,6 +154,65 @@ Due to increased electronic devices, IP address shortage led IANA to introduce P
 |  7  | 128 |
 
 > <mark style="color:orange;">**N = 1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 = 255**</mark>
+
+#### <mark style="color:blue;">**Network Bits and Host Bits for Each IP Class**</mark>
+
+<mark style="color:blue;">**Class A**</mark>
+
+<table><thead><tr><th width="164" align="center">10.</th><th width="156" align="center">0.</th><th width="171" align="center">0.</th><th align="center">.0</th></tr></thead><tbody><tr><td align="center">128+64+32+16+8+4+2+1</td><td align="center">128,64,32,16,8,4,2,1</td><td align="center">128,64,32,16,8,4,2,1</td><td align="center">128,64,32,16,8,4,2,1</td></tr><tr><td align="center">255</td><td align="center">0</td><td align="center">0</td><td align="center">0</td></tr><tr><td align="center">Network Bits</td><td align="center">Host Bits</td><td align="center">Host Bits</td><td align="center">Host Bits</td></tr></tbody></table>
+
+<mark style="color:blue;">**Class B**</mark>
+
+<table><thead><tr><th width="168" align="center">172.</th><th width="144" align="center">16.</th><th width="136" align="center">0.</th><th align="center">.0</th></tr></thead><tbody><tr><td align="center">128+64+32+16+8+4+2+1</td><td align="center">128+64+32+16+8+4+2+1</td><td align="center">128,64,32,16,8,4,2,1</td><td align="center">128,64,32,16,8,4,2,1</td></tr><tr><td align="center">255</td><td align="center">255</td><td align="center">0</td><td align="center">0</td></tr><tr><td align="center">Network Bits</td><td align="center">Network Bits</td><td align="center">Host Bits</td><td align="center">Host Bits</td></tr></tbody></table>
+
+<mark style="color:blue;">**Class C**</mark>
+
+<table><thead><tr><th align="center">192</th><th align="center">168.</th><th width="129" align="center">1.</th><th align="center">.0</th></tr></thead><tbody><tr><td align="center">128+64+32+16+8+4+2+1</td><td align="center">128+64+32+16+8+4+2+1</td><td align="center">128+64+32+16+8+4+2+1</td><td align="center">128,64,32,16,8,4,2,1</td></tr><tr><td align="center">255</td><td align="center">255</td><td align="center">255</td><td align="center">0</td></tr><tr><td align="center">Network Bits</td><td align="center">Network Bits</td><td align="center">Network Bits</td><td align="center">Host Bits</td></tr></tbody></table>
+
+<figure><img src="../.gitbook/assets/subnetrange.png" alt=""><figcaption><p><strong>Subnetting..</strong></p></figcaption></figure>
+
+### <mark style="color:blue;">**Subnet Address**</mark>
+
+<table><thead><tr><th width="118" align="center">Number/</th><th width="200" align="center">Range</th><th align="center">Details</th></tr></thead><tbody><tr><td align="center">/8</td><td align="center">255.0.0.0</td><td align="center">Default of Class A Network ID</td></tr><tr><td align="center">/9</td><td align="center">255.128.0.0</td><td align="center"></td></tr><tr><td align="center">/10</td><td align="center">255.192.0.0</td><td align="center"></td></tr><tr><td align="center">/11</td><td align="center">255.224.0.0</td><td align="center"></td></tr><tr><td align="center">/12</td><td align="center">255.240.0.0</td><td align="center"></td></tr><tr><td align="center">/13</td><td align="center">255.248.0.0</td><td align="center"></td></tr><tr><td align="center">/14</td><td align="center">255.252.0.0</td><td align="center"></td></tr><tr><td align="center">/15</td><td align="center">255.254.0.0</td><td align="center"></td></tr><tr><td align="center">/16</td><td align="center">255.255.0.0</td><td align="center">Default of Class B Network ID</td></tr><tr><td align="center">/17</td><td align="center">255.255.128.0</td><td align="center"></td></tr><tr><td align="center">/18</td><td align="center">255.255.192.0</td><td align="center"></td></tr><tr><td align="center">/19</td><td align="center">255.255.224.0</td><td align="center"></td></tr><tr><td align="center">/20</td><td align="center">255.255.240.0</td><td align="center"></td></tr><tr><td align="center">/21</td><td align="center">255.255.248.0</td><td align="center"></td></tr><tr><td align="center">/22</td><td align="center">255.255.252.0</td><td align="center"></td></tr><tr><td align="center">/23</td><td align="center">255.255.254.0</td><td align="center"></td></tr><tr><td align="center">/24</td><td align="center">255.255.255.0</td><td align="center">Default of Class C Network ID</td></tr><tr><td align="center">/25</td><td align="center">255.255.255.128</td><td align="center"></td></tr><tr><td align="center">/26</td><td align="center">255.255.255.192</td><td align="center"></td></tr><tr><td align="center">/27</td><td align="center">255.255.255.224</td><td align="center"></td></tr><tr><td align="center">/28</td><td align="center">255.255.255.240</td><td align="center"></td></tr><tr><td align="center">/29</td><td align="center">255.255.255.248</td><td align="center"></td></tr><tr><td align="center">/30</td><td align="center">255.255.255.252</td><td align="center"></td></tr><tr><td align="center">/31</td><td align="center">255.255.255.254</td><td align="center"></td></tr><tr><td align="center">/32</td><td align="center">255.255.255.255</td><td align="center">Default Universal Broadcast ID</td></tr></tbody></table>
+
+#### <mark style="color:blue;">**Formula for Subnet Mask**</mark>
+
+> **Class A** <mark style="color:orange;">**10.0.0.0 has 8 Network Bits and 24 Host Bits.**</mark> Host Bits (24) – Total Subnet = Converted Host Bits. Network Bits (8) + Converted Host Bits = Subnet Mask.
+
+**Class B** <mark style="color:orange;">**172.16.0.0 has 16 Network Bits and 16 Host Bits.**</mark> Host Bits (16) – Total Subnet = Converted Host Bits. Network Bits (16) + Converted Host Bits = Subnet Mask.
+
+**Class C** <mark style="color:orange;">**192.0.0.0 has 24 Network Bits and 8 Host Bits.**</mark> Host Bits (8) – Total Subnet = Converted Host Bits. Network Bits (24) + Converted Host Bits = Subnet Mask.
+
+### <mark style="color:blue;">**Fixed Length Subnet Mask(FLSM)**</mark>
+
+* FLSM stands for Fixed Length Subnet Mask.
+* Its subnet size can't be changed; also known as Fixed Size.
+* FLSM means a large IP can be divided into an equal number of smaller networks. For example, the network can be divided into 4 subnets, each with 40 IPs.
+
+### <mark style="color:blue;">**Variable Length Subnet Mask(VLSM)**</mark>
+
+* VLSM stands for Variable Length Subnet Mask.
+* VLSM allows us to allocate IPs according to our needs.
+
+We start from the networks with the highest requirement.
+
+<table data-full-width="true"><thead><tr><th width="125">Required IPs</th><th>Default Subnet Mask</th><th>Network Bits</th><th>Host Bits</th><th width="119">Usable IPs</th><th>Subnet Mask (Bit Count)</th><th>Subnet Mask</th><th>IP Range</th></tr></thead><tbody><tr><td>40</td><td>255.255.255.0</td><td>24</td><td>8</td><td>62</td><td>8 - 6 = 2 (Subnet /26)</td><td>255.255.255.192</td><td>192.168.1.0 - 192.168.1.63</td></tr><tr><td>30</td><td>255.255.255.0</td><td>24</td><td>8</td><td>30</td><td>8 - 5 = 3 (Subnet /27)</td><td>255.255.255.224</td><td>192.168.1.64 - 192.168.1.95</td></tr><tr><td>20</td><td>255.255.255.0</td><td>24</td><td>8</td><td>14</td><td>8 - 4 = 4 (Subnet /28)</td><td>255.255.255.240</td><td>192.168.1.96 - 192.168.1.111</td></tr></tbody></table>
+
+#### **Example Binary Representation**
+
+<table data-full-width="false"><thead><tr><th width="88">128</th><th width="60">64</th><th width="74">32</th><th width="66">16</th><th width="63">8</th><th width="59">4</th><th width="72">2</th><th>1</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr></tbody></table>
+
+### <mark style="color:blue;">**Format of an IPv4 Packet**</mark>
+
+#### **Format of an IP Version 4: The Header & the Data**
+
+<figure><img src="../.gitbook/assets/ipv4header.png" alt=""><figcaption><p><strong>Internet Protocol Address Version 4 Packet.</strong></p></figcaption></figure>
+
+* The size of the <mark style="color:orange;">IP header</mark> ranges from **20 to 60 bytes.**
+* The header includes the IP routing information that devices use to direct the packet.
+* The length of the data section of an IPv4 packet can vary greatly in size. However, the maximum possible size of an IP packet is 65,536 bytes. It contains the message being transferred to the transmission, like website information or email text.
+
+<figure><img src="../.gitbook/assets/ipv4headerindetail.png" alt=""><figcaption><p><strong>IPv4 Packet In Details</strong>.</p></figcaption></figure>
 
 ### <mark style="color:purple;">**IPv6**</mark>
 

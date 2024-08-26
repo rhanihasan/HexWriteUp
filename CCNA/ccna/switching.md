@@ -57,30 +57,30 @@ layout:
 | Power Up the Devices              | Ensure all network devices are powered on and operational.                                                                                                                         |
 | Connect to the Device via Console | Use terminal emulation software (e.g., PuTTY or SecureCRT) to establish a console connection to the network switch through the COM port.                                           |
 | Privilege Levels                  | By default, users may have privilege level 0, requiring a username and password for access.                                                                                        |
-| Enable Mode                       | Enter enable mode (user/enable mode) using the "enable" command to gain elevated privileges.                                                                                       |
+| Enable Mode                       | Enter enable mode (user/enable mode) using the "`enable`" command to gain elevated privileges.                                                                                     |
 | Interface Information             | - To view all interfaces and their status: use the "show ip interface brief" command. - To view details of a specific interface: use `show ip interface <interface>`               |
-| Configuration Mode                | Enter global configuration mode using commands like "configure terminal" or "conf t." This mode provides full access with privilege level 15.                                      |
-| Using "do" with Commands          | While in configuration mode, you can use show commands by prefixing them with "do," such as "do show ip int brief."                                                                |
+| Configuration Mode                | Enter global configuration mode using commands like "`configure terminal`" or "`conf t`." This mode provides full access with privilege level 15.                                  |
+| Using "do" with Commands          | While in configuration mode, you can use show commands by prefixing them with "`do`," such as "`do show ip int brief.`"                                                            |
 | Interface Configuration           | Configure interface settings (e.g., speed, duplex, description) using commands like: - `interface <interface>` - `speed <speed>` - `duplex <duplex>` - `description <description>` |
-| Selecting Multiple Interfaces     | Use the "interface range" command to select and configure multiple interfaces simultaneously.                                                                                      |
+| Selecting Multiple Interfaces     | Use the "`interface range`" command to select and configure multiple interfaces simultaneously.                                                                                    |
 | Set Switch Hostname               | Assign a name to the switch using the `hostname <name>` command.                                                                                                                   |
 | Banner Message                    | Create a banner message that users see when they log in.                                                                                                                           |
-| Console Password                  | Set a password for console access using the "line console 0" command.                                                                                                              |
+| Console Password                  | Set a password for console access using the "`line console 0`" command.                                                                                                            |
 | Enable Telnet                     | Configure virtual lines (vty) for Telnet access.                                                                                                                                   |
 | Management IP Address             | Assign an IP address to the management interface (usually VLAN 1).                                                                                                                 |
 | Set Passwords                     | Set an enable secret password for privileged mode.                                                                                                                                 |
 | Set Default Gateway               | Configure the default gateway.                                                                                                                                                     |
-| Clear Configurations              | To delete all configurations, use the "write erase" command.                                                                                                                       |
-| Disable DNS Lookup                | Use "no ip domain lookup" to disable DNS lookups.                                                                                                                                  |
+| Clear Configurations              | To delete all configurations, use the "`write erase`" command.                                                                                                                     |
+| Disable DNS Lookup                | Use "`no ip domain lookup`" to disable DNS lookups.                                                                                                                                |
 | Enable IP Routing (L3 Switch)     | Configure IP routing on Layer 3 switches.                                                                                                                                          |
 | Save Configurations               | Save configurations to memory or copy them to a TFTP server.                                                                                                                       |
 | Check Interface Configurations    | Use "show run" to view running configurations.                                                                                                                                     |
-| Check Time                        | View the switch's current time with "show clock."                                                                                                                                  |
-| Change Time                       | Set the time with the "clock set" command.                                                                                                                                         |
-| Change Timezone                   | Configure the timezone using "clock timezone."                                                                                                                                     |
+| Check Time                        | View the switch's current time with `"show clock`."                                                                                                                                |
+| Change Time                       | Set the time with the "`clock set`" command.                                                                                                                                       |
+| Change Timezone                   | Configure the timezone using "`clock timezone`"                                                                                                                                    |
 | Interface Shutdown/No Shutdown    | Use "`shutdown`" and "`no shutdown`" to disable/enable an interface.                                                                                                               |
-| Interface Access Mode             | Set an interface to access mode with "switchport mode access."                                                                                                                     |
-| Interface Trunk Mode              | Set an interface to trunk mode with "switchport mode trunk."                                                                                                                       |
+| Interface Access Mode             | Set an interface to access mode with "`switchport mode access`."                                                                                                                   |
+| Interface Trunk Mode              | Set an interface to trunk mode with "`switchport mode trunk`."                                                                                                                     |
 | DTP Modes                         | Configure Dynamic Trunking Protocol (DTP) modes.                                                                                                                                   |
 | Check ARP Table                   | View the Address Resolution Protocol (ARP) table with "show ip arp."                                                                                                               |
 | Encapsulation                     | Configure encapsulation for interfaces using "switchport trunk encapsulation dot1q."                                                                                               |
@@ -182,8 +182,8 @@ Switch# show vlan brief
 Switch# show interfaces trunk
 Switch# show interfaces Ethernet 0/1 switchport
 Switch# show running-config interface Ethernet 1/1
-Switch#show interfaces status
 
+Switch#show interfaces status
 interface Ethernet1/1
  switchport trunk encapsulation dot1q
  switchport trunk native vlan 2
@@ -191,6 +191,13 @@ interface Ethernet1/1
  switchport mode trunk
 end 
 ```
+
+
+
+{% hint style="info" %}
+In Cisco and Fitpipe Vlan 0 is used for QOS Configuration and VLAN 1 is used as default with untagged VLAN.\
+But in Juniper VLAN 0 is used a default VLAN and VLAN 1 is used as a custom VLAN.
+{% endhint %}
 
 ## <mark style="color:purple;">**VLAN Trunking Protocol**</mark>
 
