@@ -8,3 +8,4 @@
   * [OSI Model Layer](ccna/osi-model-layer.md)
   * [Network Protocol And Service](ccna/network-protocol-and-service.md)
   * [Switching](ccna/switching.md)
+  * [Routing](ccna/routing.md)
