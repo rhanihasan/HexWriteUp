@@ -58,6 +58,7 @@ print(save_output)
 
 # Reload the switch
 tn.write(b"reload\n")
+tn.write(b"\n")
 time.sleep(2)
 tn.write(b"\n")  # Confirm reload if needed
 time.sleep(180)  # Wait for the switch to reload (adjust time as needed)
