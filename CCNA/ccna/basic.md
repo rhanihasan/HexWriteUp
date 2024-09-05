@@ -18,7 +18,7 @@ layout:
     visible: true
 ---
 
-# Basic of Memory & Storage
+# BASIC
 
 ### <mark style="color:purple;">Introduction</mark>
 
@@ -172,7 +172,7 @@ DDR 1 was created by IBM[^1].
 #### <mark style="color:blue;">**NVME (**</mark><mark style="color:blue;">Non-Volatile Memory Express</mark><mark style="color:blue;">**)**</mark> <a href="#nvme" id="nvme"></a>
 
 * which is all in newly and lasted cable used to transfer data from **Hard Drive** to RAM.
-* It was first cable in industry to transfer data from **Hard Drive** to [#ram-random-access-memory](basic-of-memory-and-storage.md#ram-random-access-memory "mention")**RAM (**up to 1GB)
+* It was first cable in industry to transfer data from **Hard Drive** to [#ram-random-access-memory](basic.md#ram-random-access-memory "mention")**RAM (**up to 1GB)
 
 > User >> **Hard Drive** >> Video >>Play Video >> #**CPU** Command >> **RAM >**> Hard Drive Software >> Pickup >> Video Played
 

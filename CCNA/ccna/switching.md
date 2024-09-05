@@ -20,7 +20,7 @@ layout:
     visible: true
 ---
 
-# Switching
+# SWITCHING
 
 ### <mark style="color:purple;">Switch</mark>
 
@@ -516,6 +516,12 @@ Switch(config-if)# spanning-tree vlan <vlan-id> cost <value>
 ```
 Switch(config)# spanning-tree vlan <vlan-id> forward-time <time>
 ```
+
+## <mark style="color:purple;">**Cisco Nexus**</mark>
+
+## <mark style="color:purple;">**Virtual Port Channel**</mark>
+
+## &#x20;<mark style="color:purple;">**HSRP AND VRRP**</mark>
 
 ## <mark style="color:purple;">**Aruba HPE Networking and Cisco CLI Reference**</mark>
 
