@@ -1,5 +1,21 @@
 ---
 description: SYSTEM TRADE is where its has ACL, NAT, SNMP and LINE VTY and more.
+cover: ../.gitbook/assets/CCNA_SYSTEM_TRADE_COVER.png
+coverY: 301.18399999999997
+layout:
+  cover:
+    visible: true
+    size: hero
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
 ---
 
 # SYSTEM TRADE (ACL, NAT,NTP,SNMP,LINE VTY,BANNER)

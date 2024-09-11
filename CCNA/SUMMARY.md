@@ -10,3 +10,4 @@
   * [SWITCHING](ccna/switching.md)
   * [ROUTING](ccna/routing.md)
   * [SYSTEM TRADE (ACL, NAT,NTP,SNMP,LINE VTY,BANNER)](ccna/system-trade-acl-nat-ntp-snmp-line-vty-banner.md)
+  * [L2 SECURITY](ccna/l2-security.md)
