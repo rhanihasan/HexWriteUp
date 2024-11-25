@@ -328,7 +328,7 @@ In the digital world, ports are like **doors**, and **TCP/UDP** are the **rules 
 
 ### <mark style="color:purple;">Services and Protocols</mark>
 
-> **Protocols have their own **<mark style="color:blue;">**rules and regulations**</mark>**, and the **<mark style="color:blue;">**same applies to services**</mark>** as well. Services depend on **<mark style="color:purple;">**protocols**</mark>**, meaning that to use software applications or deploy services, they must adhere to the **<mark style="color:blue;">**rules and regulations**</mark>** of both the protocol and the service**
+> **Protocols have their own&#x20;**<mark style="color:blue;">**rules and regulations**</mark>**, and the&#x20;**<mark style="color:blue;">**same applies to services**</mark>**&#x20;as well. Services depend on&#x20;**<mark style="color:purple;">**protocols**</mark>**, meaning that to use software applications or deploy services, they must adhere to the&#x20;**<mark style="color:blue;">**rules and regulations**</mark>**&#x20;of both the protocol and the service**
 
 #### <mark style="color:blue;">PING</mark>
 
@@ -436,7 +436,7 @@ tracert 8.8.8.8
 **The configuration/CMD may very as per OEMs.**
 {% endhint %}
 
-1. <mark style="color:orange;">**`ip dns server`**</mark>** \[enable to act as a DNS server]**: This command typically enables the device to act as a DNS server. It allows the device to respond to DNS queries from clients on the **network**. Enabling this feature allows the device to perform DNS resolution.
+1. <mark style="color:orange;">**`ip dns server`**</mark>**&#x20;\[enable to act as a DNS server]**: This command typically enables the device to act as a DNS server. It allows the device to respond to DNS queries from clients on the **network**. Enabling this feature allows the device to perform DNS resolution.
 2. <mark style="color:orange;">**`ip dns server gateway`**</mark>: This command might specify the gateway or route for DNS traffic. It could indicate the path that DNS requests should take when leaving the local **network**.
 3. <mark style="color:orange;">**`ip host www.google.com`**</mark> **\[Name of Site] 192.168.10.50 \[IP address of that host]**: This command configures a static DNS mapping. It associates the hostname "www.google.com" with the IP address "192.168.10.50." This is useful for cases where you want to manually specify DNS mappings for specific hosts on your **network**.
 4. <mark style="color:orange;">**`show running-configure | s ip host | ip dns`**</mark>: This command displays the running configuration of the device and filters the output to show lines containing "ip host" or "ip dns." It allows you to view the current DNS-related configuration settings.
@@ -795,28 +795,28 @@ GET change the URL, GET / \[file size XXXXXXXXXXXXXXXX] /HTTP 1.1 And GET has so
 * 101 Switching Protocols: Switch to a new protocol.
 * 102 Processing: Request is being processed, but there's no response yet.
 
-<mark style="color:green;">**`2XX`**</mark>** - Success / Here you go:**
+<mark style="color:green;">**`2XX`**</mark>**&#x20;- Success / Here you go:**
 
 * 200 OK: Request successful; data returned.
 * 201 Created: Request successful; a new resource has been created.
 * 202 No Content: Request successful; no data to return (typically used for updates).
 * 205 Reset Content: Request successful; client should reset the document view.
 
-<mark style="color:blue;">**`3XX`**</mark>** - Redirection / Go Away :**
+<mark style="color:blue;">**`3XX`**</mark>**&#x20;- Redirection / Go Away :**
 
 * 300 Multiple Choices: Multiple options available; client should choose one.
 * 302 Found: Resource temporarily moved; use the new URL (commonly used for redirects).
 * 303 See Other: Similar to 302, but explicitly indicating a GET request to the new URL.
 * 305 Use Proxy: Resource must be accessed through a proxy.
 
-<mark style="color:red;">**`4XX`**</mark>** - Client Error / You Fucked Up:**
+<mark style="color:red;">**`4XX`**</mark>**&#x20;- Client Error / You Fucked Up:**
 
 * 400 Bad Request: Server can't understand the request due to malformed syntax.
 * 401 Unauthorized: Request lacks proper authentication credentials.
 * 402 Payment Required: Not widely used, and meaning not well-defined.
 * 404 Not Found: Requested resource was not found.
 
-<mark style="color:yellow;">**`5XX`**</mark>** - Server Error / I Fucked Up:**
+<mark style="color:yellow;">**`5XX`**</mark>**&#x20;- Server Error / I Fucked Up:**
 
 * 501 Not Implemented: Server doesn't support needed functionality.
 * 502 Bad Gateway: Server acting as a gateway received an invalid response from an upstream server.

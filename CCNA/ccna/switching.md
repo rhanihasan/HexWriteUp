@@ -258,7 +258,7 @@ EtherChannel bundles multiple physical Ethernet links into a single logical link
 
 #### <mark style="color:blue;">**LACP (Link Aggregation Control Protocol):**</mark>
 
-* LACP stands for Link Aggregation Control Protocol it is an **open standard** defined by **IEEE 802.3ad (**vendor-neutral**),** which is used to establish and manage EtherChannels .
+* LACP stands for Link Aggregation Control Protocol it is an **open standard** defined by **IEEE 802.3ad (**&#x76;endor-neutra&#x6C;**),** which is used to establish and manage EtherChannels .
 * LACP enables the combination of multiple network connections in parallel, improving performance and redundancy.
 
 #### <mark style="color:blue;">MODE</mark>
