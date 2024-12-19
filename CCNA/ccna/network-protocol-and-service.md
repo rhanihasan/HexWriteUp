@@ -824,3 +824,12 @@ GET change the URL, GET / \[file size XXXXXXXXXXXXXXXX] /HTTP 1.1 And GET has so
 * 504 Gateway Timeout: Server acting as a gateway did not receive a timely response from an upstream server.
 * 506 Variant Also Negotiates: Server has an internal configuration error.
 * 507 Insufficient Storage: Server is unable to store the representation needed to complete the request.
+
+
+
+## Decoding the Language of Networks
+
+{% file src="../.gitbook/assets/Decoding the Language of Networks.pptx" %}
+Network And Service Presentation
+{% endfile %}
+
