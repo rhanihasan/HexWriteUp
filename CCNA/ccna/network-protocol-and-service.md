@@ -393,7 +393,7 @@ tracert 8.8.8.8
 {% tabs %}
 {% tab title="What is DNS ?" %}
 * **Domain Name System** uses port **53 works on UDP protocol mostly but also works on TCP.**
-* **Domain Name System (DNS)** is a protocol that translates internet domain names into IP addresses. When a client computer wishes to access a website domain using their internet browser, a query is sent to a dedicated DNS server. The **DNS** **server** then looks up the IP address that corresponds to the website domain. DNS normally uses **UDP on port 53**. However, if the DNS reply to a request is large, it will switch to using the TCP protocol. In the [Broken link](broken-reference "mention"), DNS occurs at the application layer.
+* **Domain Name System (DNS)** is a protocol that translates internet domain names into IP addresses. When a client computer wishes to access a website domain using their internet browser, a query is sent to a dedicated DNS server. The **DNS** **server** then looks up the IP address that corresponds to the website domain. DNS normally uses **UDP on port 53**. However, if the DNS reply to a request is large, it will switch to using the TCP protocol [#protocol](network-protocol-and-service.md#protocol "mention"), DNS occurs at the application layer.
 {% endtab %}
 
 {% tab title="Why DNS Comes ?" %}
