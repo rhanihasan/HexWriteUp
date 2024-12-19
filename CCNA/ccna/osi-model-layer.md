@@ -20,7 +20,7 @@ layout:
     visible: true
 ---
 
-# OSI Model Layer
+# OSI MODEL LAYER
 
 ### <mark style="color:purple;">Internaltional Standard Organization (ISO)</mark>
 
@@ -216,3 +216,6 @@ Nowadays QUIC protocol is used which is a combination of TCP , UDP , HTTP.
 * **IP Packets:** Every data packet, known as an IP packet or datagram, contains an IP address. This address is pivotal for routing as routers utilize it to direct packets between networks. The IP header within the packet communicates vital information beyond the destination address, such as source IP, packet size, and the protocol to be used for the data.
 
 > **The network layer** serves as the bridge between different networks, ensuring effective data transmission and routing. It empowers the internet to function as a seamless global network.
+
+<figure><img src="../.gitbook/assets/CCNA_TCP_IPMODEL.png" alt=""><figcaption><p>TCP IP MODEL</p></figcaption></figure>
+
