@@ -1,6 +1,6 @@
 # Table of contents
 
-* [CCNA Initailted](README.md)
+* [CCNA Initiated](README.md)
 * [1. THE BASIC](1.-the-basic.md)
 * [2. Network Topology And Components](2.-network-topology-and-components.md)
 * [3. NETWORK CABLES](3.-network-cables.md)
